@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt_MZ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Júlio Moisés Rafael's Home Paeg">
+    <meta name="author" content="JR Webmaster">
+    <title>Contacts · JR Webmaster</title>
+
+    <!-- CSS files-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="index.html">
+              JR Webmaster
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
+            <a class="py-2 d-none d-md-inline-block" href="about.html">About</a>
+            <a class="py-2 d-none d-md-inline-block" href="portfolio.html">Portfolio</a>
+            <a class="py-2 d-none d-md-inline-block" href="contacts.html">Contacts</a>
+
+            <form class="form-inline mt-2 mt-md-0" method="GET">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+<!--End of navigation bar-->
+
+    <!--Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-gray text-black><i class="fa fa-envelope"></i> <strong> Contact me</strong>
+                    </div>
+                    <div class="card-body">
+                        <form onsubmit="return submitIt()">
+                            <div class="form-group">
+                                <label for="name">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">Your email won't be shared with anyone else.</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="telephone">Telephone <span class="text-danger">*</span></label>
+                                        <input type="telephone" class="form-control" id="telephone" aria-describedby="telephoneHelp" placeholder="Enter Telephone" required>
+                                        <small id="telephoneHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" id="subject" aria-describedby="subjectHelp" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <div class="mx-auto">
+                            <button type="submit" class="btn btn-primary bg-block text-right">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-gray text-black"><i class="fa fa-home"></i> Address</div>
+                    <div class="card-body">
+                        <p>Rua dos CFM, 840</p>
+                        <p>Maputo - Moçambique</p>
+                        <p>Website : www.khateko.com</p>
+                        <p>info@khateko.com</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Content-->
+
+    <!--Footer--> <div class="footerBg">
+    <footer class="container py-4">
+        <div class="row">
+          <div class="col-12 col-md">
+            JR Webmaster
+            <small class="d-block mb-3 text-muted">&copy; All right reserved 2020</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Web Development</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Front-end</a></li>
+              <li><a class="text-muted" href="#">Back-end</a></li>
+              <li><a class="text-muted" href="#">Database</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>IT Consulting</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Software Solutions</a></li>
+              <li><a class="text-muted" href="#">Hardware Solutions</a></li>
+              <li><a class="text-muted" href="#">Data Analysis</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Web Pentesting</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Websites</a></li>
+              <li><a class="text-muted" href="#">Web App</a></li>
+              <li><a class="text-muted" href="#">Consulting</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--/Footer-->
+    </div>
+        <script src="assets/emailSubmit.js"></script>
+    </body>
+</html>
